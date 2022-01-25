@@ -8,8 +8,8 @@
 
 	<SolidColorBrush x:Key="digBg" Color="#363636"/>
 	<SolidColorBrush x:Key="digFont" Color="LightGray"/>
-
-	<Style TargetType="TextBlock" x:Key="MainTB">
+    <Color x:Key="digBgColor" R="0x36" G="0x36" B="0x36"  A="0xFF"/>
+    <Style TargetType="TextBlock" x:Key="MainTB">
 		<Setter Property="Background" Value="{StaticResource textboxBG}"/>
 		<Setter Property="Foreground" Value="{StaticResource textboxFont}"/>
 	</Style>
@@ -17,11 +17,9 @@
 	<Style TargetType="Menu">
 		<Setter Property="Background" Value="{StaticResource digBg}"/>
 		<Setter Property="Foreground" Value="{StaticResource digFont}"/>
-	</Style>
-	<Style TargetType="MenuItem">
-		<Setter Property="Background" Value="{StaticResource digBg}"/>
-		<Setter Property="Foreground" Value="{StaticResource digFont}"/>
-	</Style>
+       
+    </Style>
+   
     <Style TargetType="Button" >
         <Setter Property="Focusable" Value="False"/>
         <Setter Property="Background" Value="{StaticResource btnBg}"/>

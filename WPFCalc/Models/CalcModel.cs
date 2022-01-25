@@ -183,7 +183,7 @@ namespace WPFCalc.Models
                 Util.Debug("UpdateUI; выбор операции/цирф");
                 if (operation != EOper.NONE)
                 {
-
+                   
                     Util.Debug($"UpdateUI, FirstVar={FirstVar} operation={operation}; OperChanged={operChanged}; SecVarChanged={secVarChanged}");
 
                     VM.UpStrokeProp = FirstVar + EOperUtil.ToString(operation);//v1 *

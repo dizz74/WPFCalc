@@ -8,7 +8,8 @@
 		xmlns:vm="clr-namespace:WPFCalc.ViewModels"
 		mc:Ignorable="d"
 		Title="Калькулятор" Height="450" Width="800" FontSize="16" Icon="calculator.png" 
-		
+		MinHeight="400"
+        MinWidth="400"
 		>
     <i:Interaction.Behaviors>
         <local:KeyUpWithArgsBehavior   KeyUpCommand="{Binding KeyUpCmd}" />

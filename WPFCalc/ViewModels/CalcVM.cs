@@ -112,9 +112,11 @@ namespace WPFCalc.ViewModels
 
         public void ShowError(string msg)
         {
+            System.Diagnostics.StackTrace t = new System.Diagnostics.StackTrace();
+            Util.Debug(t.ToString());
             model.SelectOper(EOper.NONE);
             Util.Debug($"Show error{msg}");
-            MainStrokeProp = "";
+            MainStrokeProp = "0";
             UpStrokeProp = $"Ошибка:{msg}";
         }
 
